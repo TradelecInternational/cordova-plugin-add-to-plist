@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-plugin-add-to-plist" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Add to Plist</name>
+    <author>Tradelec International NV</author>
+    <description>Cordova / PhoneGap Plugin to add stuff to the plist in ios</description>
+    <keywords>cordova, ios, app</keywords>
+    <license>MIT</license>
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+    <platform name="ios">
+        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+            <array>
+                <string>bepgenapp</string>
+            </array>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+            <string>We gebruiken je camera om parkeergaragetickets te scannen.</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>We gebruiken je locatie om het plaatselijke parkeertarief te bepalen.</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+            <string>We gebruiken je locatie om het plaatselijke parkeertarief te bepalen.</string>
+        </config-file>
+    </platform>
+</plugin>
