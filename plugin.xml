@@ -23,5 +23,8 @@
         <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
             <string>We gebruiken je locatie om het plaatselijke parkeertarief te bepalen.</string>
         </config-file>
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
+            <string>We gebruiken je locatie om het plaatselijke parkeertarief te bepalen.</string>
+        </config-file>
     </platform>
 </plugin>
